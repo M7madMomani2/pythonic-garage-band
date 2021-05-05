@@ -28,7 +28,7 @@ class Band(Musician) :
         return f"My name is {self.name} and I play {self.get_instrument()}"
 
     def __repr__ (self):
-        print("------------")
+        print("-----------")
 
     @classmethod
     def to_list(cls):
