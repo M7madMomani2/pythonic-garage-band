@@ -16,17 +16,10 @@ class Band:
             if string_message[0] == 'drums':
                 message.append('rattle boom crash')
         return message
-        
-    def __str__(self):
-        return f"The band {self.name} has the following members {self.members}"
-    
-    def __repr__(self):
-        return f"{self.__class__.__name__} instance. Name = {self.name}"
-    
+            
     @classmethod
     def to_list(cls):
         return cls.instances
-
 
 
 class Musician():
@@ -68,3 +61,14 @@ class Drummer(Musician):
         super().__init__(name)
         self.solo_play = 'rattle boom crash'
 
+ob1=Drummer("Mohammad")
+print(ob1.__str__())
+print(ob1.__repr__())
+
+ob2=Bassist("Mohammad")
+print(ob2.__str__())
+print(ob2.__repr__())
+
+# print(ob1.__str__())
+# print(ob1.__str__())
+# print(ob1.__str__())
